@@ -1,0 +1,328 @@
+<html>
+
+<head>
+<title> Web Engineering</title>
+<style type="text/css">
+
+        nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1583E9;
+
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 130px;
+  text-decoration: none;
+   margin-left: 0px;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+    
+.column {
+  float: left;
+  width: 25%;
+  
+}
+
+.column img {
+
+    width: 100%;
+    height: auto;
+}
+    
+    
+.footer {
+    
+    padding: 15px 2px;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+    display:table;
+}
+    
+
+    </style>
+</head>
+<body>
+
+    
+//         function isAlphabet(elem, helperMsg){
+// 	var alphaExp = /^[a-zA-Z]+$/;
+// 	if(elem.value.match(alphaExp)){
+// 		return true;
+// 	}
+//     else{
+// 		alert(helperMsg);
+// 		elem.focus();
+// 		return false;
+// 	}
+// 	}
+    
+// function isAlphanumeric(elem, helperMsg){
+// 	var alphaExp = "[0-9a-zA-Z]+";
+// 	if(elem.value.match(alphaExp)){
+// 		return true;
+// 	}else{
+// 		alert(helperMsg);
+// 		elem.focus();
+// 		return false;
+// 	}
+// 	}
+        
+// function madeSelection(elem, helperMsg){
+// 	if(elem.value == "Please Choose"){
+// 		alert(helperMsg);
+// 		elem.focus();
+// 		return false;
+// 	}else{
+// 		return true;
+// 	}
+// 	}
+        
+// function emailValidator(elem, helperMsg){
+// 	var emailExp = "[a-zA-Z0-9_\\.\\+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-\\.]+";
+// 	if(elem.value.match(emailExp)){
+// 		return true;
+// 	}else{
+// 		alert(helperMsg);
+// 		elem.focus();
+// 		return false;
+// 	}
+// }
+        
+        
+    function formValidator(){
+	// Make quick references to our fields
+	var fname=document.getElementById('fname'); 
+	var lname=document.getElementById('lname');
+    var email = document.getElementById('email');
+	var password = document.getElementById('password');
+	var checkbox = document.getElementById('checkbox');
+	var payment = document.getElementById('payment');
+	var comment = document.getElementById('comment');
+	
+        
+//        if(isAlphabet(fname, "Please enter only letters for your name")){
+// 		if(isAlphabet(lname, "Please enter only letters for your name")){
+//             if(emailValidator(email, "Please enter a valid email address")){
+//            if(isAlphanumeric(password, "Numbers and Letters Only for Address")){
+//            if(madeSelection(checkbox, "select a box")){
+// 				if(madeSelection(payment, "Please Choose a Payment method")){
+// 					if(isAlphabet(comment, "Please Add comment")){
+// 							return true;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+
+	
+	
+// 	return false;
+	
+// } 
+        
+// function checkFirstName(){
+//   console.log(fname);
+// }    
+</script>  
+    
+   
+<nav>
+<ul>
+  <li><a href="mid.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="registration.html">Client Registeration</a></li>
+</ul>
+</nav>
+    
+    
+    
+
+    
+<h1 align="center" color="white"><b>Client Registration</b></h1>
+<table width="350" align="center">
+<form onsubmit='return formValidator()' align="center">
+<tr>
+<td  width="50" height="35"> Firstname</td>
+<td> <input type="text" size="48" id="fname" placeholder="Firstname" required="true"/></td>
+</tr>
+
+
+
+
+<tr>
+<td  width="50" height="27"> LastName</td>
+<td> <input type="text" size="48" id="lname" placeholder="lastname" required="true" onclick="checkFirstName()"/></td>
+</tr>
+
+
+<tr>
+<td  width="50" height="27" > Email</td>
+<td> <input type="text" size="48" id="email" placeholder="enter email" required="true"/></td>
+</tr>
+
+<tr>
+<td  width="50" height="27" > Password</td>
+<td> <input type="text"size="48" id="password" placeholder="enter password" required="true"/></td>
+</tr>
+    
+    
+<tr>
+<td  width="50" height="27"> Select subjects</td>
+<td id="checkbox" required="true">
+ <input type="checkbox" name="h1" value="english"/>english
+ <input type="checkbox" name="h2" value="urdu"/>urdu
+ <input type="checkbox" name="h3" value="math"/>math
+ <input type="checkbox" name="h4" value="physics"/>physics
+
+
+
+</td>
+</tr>
+    
+    
+<tr>
+<td  width="50" height="27"> Select Payment Method</td>
+<td> <select name="payment" id="payment">
+
+<option value="select"> select</option>
+<option value="Jazzcash"> Jazzcash</option>
+<option value="Easypaisa"> Easypaisa</option>
+<option value="Bank Transfer"> Bank Transfer</option>
+
+
+</select>
+
+</td>
+</tr>
+
+
+<tr>
+<td  width="50"> Comments</td>
+<td> <textarea cols="50"rows="7" id="comment"></textarea></td>
+</tr>
+
+
+<tr>
+<td colspan="2" align="right">
+<input type="submit"value="Submit"/>
+<input type="reset"value="reset"/>
+</td>
+</tr>
+
+
+
+
+</form>
+
+</table>
+<br><br><br><br>
+    
+
+    
+
+
+
+
+
+    
+       <div class="upfoot">
+    <div class="row" style="background-color: aquamarine">
+  <div class="column" style="text-align: center; background-color: aliceblue">
+      <h2 style="color: red">Quick Links</h2>
+    <ul style="list-style-type:none;">
+      <a href="mid.html"><li>Home</li></a><br>
+        <a href="about.html"><li>About</li></a><br>
+      <a href="contact.html"><li>Contact</li></a><br>
+      <a href="registration.html"><li>Registration</li></a>
+        <br>
+      </ul>
+  </div>    
+    </div>
+        
+        
+        
+        
+        <div class="row" style="background-color: aquamarine">
+  <div class="column" style="text-align: center; background-color: aliceblue">
+      <h2 style="color: red">Address</h2>
+    <ul style="list-style-type:none;">
+      <li style="text-decoration: none">House no. 68, Street no.55</li>
+        <br>
+      <li style="text-decoration: none">Timber Market, Ravi Road</li>
+        <br>
+      <li style="text-decoration: none">Lahore, Pakistan</li>
+      <br>
+      <br>
+      <br>
+      
+      </ul>
+  </div>
+    </div>
+        
+        
+        
+        
+        
+        <div class="row" style="background-color: aquamarine">
+  <div class="column" style="text-align: center; background-color: aliceblue">
+      <h2 style="color: red">Socia Media Links</h2>
+    <ul style="list-style-type: none">
+      <li style="text-decoration: none"><b style="color: red">Facebook: </b>@digixservices</li><br>
+      <li style="text-decoration: none"><b style="color: blue">Instagram: </b>@digixservices</li><br>
+      <li style="text-decoration: none"><b style="color: green">Linkedin: </b>@digixservices</li>
+        </ul>
+      <br>
+      <br>
+      <br>
+      
+  </div>
+    </div>
+        
+        
+        
+        
+        
+        <div class="row">
+  <div class="column" style="text-align: center; background-color: aliceblue">
+      <h2 style="color: red">Contact</h2>
+    <ul style="list-style-type:none;">
+      <li><b>Email:</b>info@digixservices.com</li><br>
+      <li><b>Cell:</b>0305-2007796</li><br>
+      <li><b>City:</b>Lahore, Pakistan</li>
+      <br>
+      <br>
+      <br>
+      
+      </ul>
+  </div>
+    </div>
+    
+   </div> 
+    
+    
+    <div class="footer">
+  <p>All Rights Reserved (c) Digix Services 2020</p>
+</div>
+    
+
+
+
+</body>
+</html>
